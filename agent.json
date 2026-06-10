@@ -1,0 +1,15 @@
+{
+  "id": "mcp-demo-job-agent-7toaq4",
+  "name": "MCP Demo Job Agent",
+  "description": "A smoke-test agent created through ProAgentStore MCP browser sign-in.",
+  "storeType": "agent",
+  "category": "productivity",
+  "model": "@cf/meta/llama-3.2-3b-instruct",
+  "template": "worker",
+  "serverConfig": {
+    "durableObject": true,
+    "routes": [
+      "mcp-demo-job-agent-7toaq4.proagentstore.online/*"
+    ]
+  }
+}
