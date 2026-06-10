@@ -19,4 +19,12 @@ app.post("/chat", async (c) => {
 	return c.json(result);
 });
 
+export class AgentDO {
+	constructor(private state: DurableObjectState, private env: Env) {}
+
+	async fetch(request: Request): Promise<Response> {
+		return app.fetch(request, this.env);
+	}
+}
+
 export default app;
